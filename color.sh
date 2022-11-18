@@ -1,0 +1,18 @@
+#!/bin/bash
+#@auth ungtb10d
+#@desc - bæsj med farger oO
+
+B=`tput bold`           #BOLD
+D=`tput dim`            #DIM
+U=`tput sgr 0 1`        #UNDERLINE
+U2=`tput smul`          #UNDERLINE2
+NOU=`tput rmul`         #NO UNDERLINE
+H=`tput smso`           #HIGHLIGHT
+X=`tput sgr0`           #RESET
+C='tput setaf '         #COLOR
+
+
+for i in 0 1 2 3 4 5 6 7 ; do
+        c=`$C$i` && echo $c${B}Jeg ${U}bæsjer$NOU $D i \
+           ${U2}farger$NOU \& $c${H}liker det!$X
+done;
